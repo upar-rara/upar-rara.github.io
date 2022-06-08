@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 const newYearTime = new Date(`July 22 ${currentYear + 1} 00:00:00`);
 
 // Update countdown time
-function updateCountdowntime() {
+function updateCountdown() {
   const currentTime = new Date();
   const diff = newYearTime - currentTime;
 
@@ -23,4 +23,4 @@ function updateCountdowntime() {
   seconds.innerHTML = s < 10 ? "0" + s : s;
 }
 
-setInterval(updateCountdowntime, 1000);
+setInterval(updateCountdown, 1000);
